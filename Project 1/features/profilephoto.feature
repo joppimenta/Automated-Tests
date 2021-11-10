@@ -6,7 +6,7 @@ Feature: Profile Photo
     Then the photo chosen by the user becomes their profile photo
 
 
-    #Scenario: Remove a profile photo (2f)
-      #Given the user is on the platform login page 9
-      #When the user logins on the platform, goes to the Edit Profile zone and clicks on the Remove Photo button
-      #Then the profile photo is removed
+    Scenario: Remove a profile photo (2f)
+      Given the user is on the platform login page 9
+      When the user logins on the platform, goes to the Edit Profile zone and clicks on the Remove Photo button
+      Then the profile photo is removed
