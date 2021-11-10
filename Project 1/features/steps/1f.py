@@ -39,7 +39,10 @@ def when(context):
     addPhoto_button = context.driver.find_element_by_xpath("/html/body/app-root/app-sidebar-layout/div/div/app-profile/form/div[2]/div[1]/div[1]/button")
     addPhoto_button.click()
 
-    context.driver.find_element_by_id("IdOfInputTypeFile").send_keys(os.getcwd() + "/170-1704708_unit-jotaro-kujo-jojos-bizarre-adventure.png")
+    path = 'C:\profile_photos\perfil.png'
+    change_photo_input = context.driver.find_element_by_id('inputAvatar')
+    change_photo_input.send_keys(path)
+
 
 
 @then("the photo chosen by the user becomes their profile photo")
